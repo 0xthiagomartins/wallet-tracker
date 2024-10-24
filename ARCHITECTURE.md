@@ -21,16 +21,19 @@ This directory contains the Streamlit application, which serves as the frontend 
 - Streamlit scripts for different pages and components.
 - Static assets such as images and CSS files.
 - Configuration files specific to the frontend.
+- **Requirements:** Refer to `client/requirements.txt`.
 
 ### src/server
 
 **Description:**  
-The `server/` folder houses all backend services. This includes APIs, business logic, data processing, and interactions with external services like databases and third-party APIs.
+The `server/` folder houses all backend services. This includes APIs, business logic, data processing, and interactions with external services like databases and third-party APIs. It utilizes **SQLModel** and **sqlmodel-controller** for ORM and controller-based CRUD operations.
 
 **Contents:**
 - API endpoint implementations.
 - Service modules handling various functionalities (e.g., authentication, data retrieval).
 - Utility functions and middleware.
+- **SQLModel:** For ORM and database interactions.
+- **sqlmodel-controller:** For managing CRUD operations with high-level abstractions.
 
 ### src/tests
 
@@ -42,10 +45,10 @@ This directory is dedicated to testing the server-side components using Pytest. 
 - Mock data and fixtures.
 - Configuration for Pytest.
 
-### src/__main__
+### src/__main__.py
 
 **Description:**  
-The `__main__/` folder serves as the application initializer. It bootstraps the entire application, setting up necessary configurations and starting the Streamlit server.
+The `__main__.py` file serves as the application initializer. It bootstraps the entire application, setting up necessary configurations and starting the Streamlit server.
 
 **Contents:**
 - Entry point scripts.

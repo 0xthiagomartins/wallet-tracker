@@ -1,0 +1,10 @@
+pydantic[email]
+sqlmodel
+sqlmodel-controller
+sqlalchemy
+bcrypt
+PyJWT
+streamlit
+requests
+pytest
+pytest-cov
